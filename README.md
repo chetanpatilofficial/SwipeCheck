@@ -12,22 +12,20 @@ To simulate user location and transaction location data. A kafka producer is str
 
 
 **Architecure**
-
+  ![GitHub Logo](/docs/architecture.png)
 
 
 **Instructions**
 
 Pegasus is a tool that allows you to quickly deploy a number of distributed technologies.
 
-Install and configure AWS CLI and Pegasus on your local machine, and clone this repository using: <clone URL>
+Install and configure [AWS CLI](https://aws.amazon.com/cli/) and [Pegasus](https://github.com/InsightDataScience/pegasus) on your local machine, and clone this repository using 'https://github.com/chetanpatilofficial/SwipeCheck.git'
 
 **SET UP CLUSTER**
 
-(3 nodes) Kafka-Cluster , instance type: m4.large
+(3 nodes) Kafka-Cluster , instance type: m4.large <br>
 (1 node) PostgreSQL(Timescale) and Grafana , instance type: m5.2xlarge
 
 Follow the instructions in docs/pegasus.txt to create required clusters, install and start technologies
 
-Install Postgres with Timescale extension using this link then follow instructions in docs/postgres.txt
-
-Running the platform
+Install Postgres with Timescale extension using this [link](https://docs.timescale.com/latest/getting-started/installation/ubuntu/installation-apt-ubuntu) then follow instructions in docs/postgres.txt
