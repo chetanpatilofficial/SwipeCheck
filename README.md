@@ -26,6 +26,12 @@ Install and configure [AWS CLI](https://aws.amazon.com/cli/) and [Pegasus](https
 (3 nodes) Kafka-Cluster , instance type: m4.large <br>
 (1 node) PostgreSQL(Timescale) and Grafana , instance type: m5.2xlarge
 
-Follow the instructions in docs/pegasus.txt to create required clusters, install and start technologies
+Run bash_scripts/kafka_setup.sh and bash_scripts/timescaledb_setup.sh and follow the instructions in docs/setup.md to create required clusters, install and start technologies.
 
-Install Postgres with Timescale extension using this [link](https://docs.timescale.com/latest/getting-started/installation/ubuntu/installation-apt-ubuntu) then follow instructions in docs/postgres.txt
+**DEMO**
+![Credit Card Fraud Detection Demo](docs/demo/grafana-dashboard.gif)
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
