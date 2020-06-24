@@ -24,7 +24,6 @@ class MessageProducer:
     def get_timestamp(self):
         time = datetime.now()
         time = time.strftime('%Y-%m-%d %H:%M:%S.%f')
-        #timestamp = int(time.time()*1000.0)
         return time
     
     def delivery_report(self, err, msg):

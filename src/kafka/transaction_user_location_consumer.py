@@ -42,9 +42,6 @@ class MessageConsumer:
                     print("Consumer error: {}".format(msg.error()))
                     print('Received message: {}'.format(msg.value().decode('utf-8')))
                 else:
-                    #record_value = msg.value().decode('utf-8')
-                    #data = json.loads(record_value)
-                    print('Received message: {}'.format(msg.value().decode('utf-8')))
                     combined_transaction_user_values = msg.value().decode('utf-8').split(",")
                     tloc_user_id = combined_transaction_user_values[0]
                     uloc_user_id = combined_transaction_user_values[1]
@@ -74,7 +71,6 @@ class MessageConsumer:
                                  t_time_stamp,t_millis, amount, tloc_latitude, tloc_longitude, u_time_stamp, u_millis, 
                                  uloc_latitude, uloc_longitude, distance)
                                  values('{}','{}','{}','{}',{},{},{},{},'{}',{},{},{},{})'''
-                    #combined_transaction_user_values = "U2394832,U2394832,M42438,2020-06-20 23:55:48,748,738.33,78.37343,111.282718,2020-06-20 23:55:48,748,78.37343,111.282718,0.0".split(",")
     
                     statement = INSERT_STR.format(tloc_user_id, uloc_user_id, merchant_id, t_time_stamp,
                                                   t_millis, amount, tloc_latitude, tloc_longitude,
