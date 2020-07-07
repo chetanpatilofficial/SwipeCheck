@@ -26,7 +26,9 @@ class StreamConsumer:
             consumer = Consumer({
                             'bootstrap.servers': application_config.KAFKA_SERVERS_DEV,
                             'group.id': application_config.MY_CONSUMER_GROUP,
-                            'auto.offset.reset': application_config.CONSUMER_OFFSET_RESET_EARLIEST
+                            'auto.offset.reset': application_config.CONSUMER_OFFSET_RESET_EARLIEST,
+                            'fetch.min.bytes' : 100000,
+                            'enable.auto.commit' : True
                             })
 
             consumer.subscribe(self.combined_transaction_user_location_topic)
