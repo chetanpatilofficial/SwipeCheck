@@ -25,8 +25,9 @@ class StreamProducer:
     def __init__(self, credit_card_transaction_topic, user_location_topic):
         self.producer = Producer({'bootstrap.servers': application_config.KAFKA_SERVERS_DEV,
                                   'linger.ms': 1, 
-                                  'batch.num.messages': 3000, 
-                                  'queue.buffering.max.messages': 10000})
+                                  'batch.num.messages': 5000,
+                                  'acks' : 1,
+                                  'compression.type' : 'lz4'})
         self.credit_card_transaction_topic = credit_card_transaction_topic
         self.user_location_topic = user_location_topic
         self.credit_card_transactions_generator_obj = TransactionMessageGenerator()
