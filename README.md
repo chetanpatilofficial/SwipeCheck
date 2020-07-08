@@ -1,8 +1,11 @@
+**Chetan Patil - Insight Data Engineering (New York - Summer 2020)**
+
 ![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)
 ![Confluent Platform 5.5.1](https://img.shields.io/badge/Confluent%20Platform-5.5.1-orange)
 ![TimescaleDB 1.7](https://img.shields.io/badge/TimescaleDB-1.7.0%20-red)
 ![Grafana 6.7](https://img.shields.io/badge/Grafana-6.7-brightgreen)
 ![License MIT](https://img.shields.io/badge/License-MIT-yellowgreen)
+
 # SwipeCheck
 
 **A Platform for Real-time anomaly detection in Credit Card Transactions**
@@ -18,8 +21,6 @@
 8. [Slide Deck](README.md#Slide-Deck)
 9. [License](README.md#License)
 
-
-**Chetan Patil - Insight Data Engineering (New York - Summer 2020)**
 
 ## Background
 Credit card fraud has been steadily increasing over the years, but it exploded in 2019, with the number of reports increasing by 72.4% from 2018. In 2019 consumers reported losing more than $1.9 billion related to fraud complaints, an increase of $293 million from 2018 for lost/stolen cards. One of the major challenges in payment industry today is detecting credit card  fraudulent transactions for lost/stolen cards. 
