@@ -1,5 +1,3 @@
-**Chetan Patil - Insight Data Engineering (New York - Summer 2020)**
-
 ![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)
 ![Confluent Platform 5.5.1](https://img.shields.io/badge/Confluent%20Platform-5.5.1-orange)
 ![TimescaleDB 1.7](https://img.shields.io/badge/TimescaleDB-1.7.0%20-red)
