@@ -56,7 +56,7 @@ Install and configure [AWS CLI](https://aws.amazon.com/cli/) and [Pegasus](https
 Run bash_scripts/kafka_setup.sh and bash_scripts/timescaledb_setup.sh and follow the instructions in docs/setup.md to create required clusters, installation and setup technologies.
 Finally run bash_scripts/kafka_run.sh to start producer and consumer
 
-## DEMO
+## Demo
 ![Credit Card Fraud Detection Demo](docs/demo/grafana-dashboard.gif)
 
 ## Slide Deck
