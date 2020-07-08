@@ -9,13 +9,14 @@
 
 # Table of Contents
 1. [Background](README.md#Background)
-2  [Project Goal](README.md#Project-Goal)
+2. [Project Goal](README.md#Project-Goal)
 3. [Approach](README.md#Approach)
-   [Architechture](README.md#Architechture)
-   [Instructions](README.md#Instructions)
-3. [Slide Deck](README.md#Slide-Deck)
+4. [Architechture](README.md#Architechture)
 5. [Repository Structure](README.md#Repository-Structure)
 6. [Instructions](README.md#Instructions)
+7. [Demo](README.md#Demo)
+8. [Slide Deck](README.md#Slide-Deck)
+9. [License](README.md#License)
 
 
 **Chetan Patil - Insight Data Engineering (New York - Summer 2020)**
@@ -26,16 +27,23 @@ Credit card fraud has been steadily increasing over the years, but it exploded i
 ## Project Goal
 The goal of this project is to identify suspicious credit card transactions by comparing user and transaction location data in realtime and sending alert to user if the user is more than 8 km away in last 10 minutes.
 
-**Approach**
+## Approach
 
 To simulate user location and transaction location data. A kafka producer is streaming the data at rate of 30000 messages/sec. the two stream (user and location) are joined with in 10 minute window and further calculte the distance between the user location and transaction location and if the user location more than 8 km away from transaction location we will alert the user.
 
-
-**Architecure**
+## Architecure
   ![GitHub Logo](/docs/architecture.png)
 
+## Repository Structure
+   <pre>
+   ├── bash_scripts           Scripts to run producer and consumer, setup kafka cluster and timescaledb
+   ├── docs                   Configuration and setup information
+   ├── src                    Source code for data generation and kafka producer, consumer
+   ├── README.md              Information for running and setting up project
+   └── application_config.py  config file which contains the properties constants
+   </pre>
 
-**Instructions**
+## Instructions
 
 Pegasus is a tool that allows you to quickly deploy a number of distributed technologies.
 
@@ -48,9 +56,11 @@ Install and configure [AWS CLI](https://aws.amazon.com/cli/) and [Pegasus](https
 
 Run bash_scripts/kafka_setup.sh and bash_scripts/timescaledb_setup.sh and follow the instructions in docs/setup.md to create required clusters, install and start technologies.
 
-**DEMO**
+## DEMO
 ![Credit Card Fraud Detection Demo](docs/demo/grafana-dashboard.gif)
 
+## Slide Deck
+[Demo Slides](https://tinyurl.com/yc9sclht)
 
 ## License
 
