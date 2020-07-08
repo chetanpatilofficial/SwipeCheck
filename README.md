@@ -11,7 +11,7 @@
 1. [Background](README.md#Background)
 2. [Project Goal](README.md#Project-Goal)
 3. [Approach](README.md#Approach)
-4. [Architechture](README.md#Architechture)
+4. [Architechture](README.md#Architecture)
 5. [Repository Structure](README.md#Repository-Structure)
 6. [Instructions](README.md#Instructions)
 7. [Demo](README.md#Demo)
@@ -31,7 +31,7 @@ The goal of this project is to identify suspicious credit card transactions by c
 
 To simulate user location and transaction location data. A kafka producer is streaming the data at rate of 30000 messages/sec. the two stream (user and location) are joined with in 10 minute window and further calculte the distance between the user location and transaction location and if the user location more than 8 km away from transaction location we will alert the user.
 
-## Architecure
+## Architecture
   ![GitHub Logo](/docs/architecture.png)
 
 ## Repository Structure
